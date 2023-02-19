@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
-  year: number = new Date().getFullYear()
+  
 
 }
