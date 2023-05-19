@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SettingService } from '../services/setting.service';
 
+declare function customMiFuncion() : any;
+
 @Component({
     selector: 'app-pages',
     templateUrl: './pages.component.html',
@@ -9,11 +11,14 @@ import { SettingService } from '../services/setting.service';
 })
 export class PagesComponent implements OnInit {
 
-    constructor(private settingsService: SettingService) {
+    fecha: number = new Date().getFullYear()
+
+    constructor(private settingsService: SettingService) {       
 
     }
 
     ngOnInit(): void {
+        customMiFuncion();
 
     }
 
