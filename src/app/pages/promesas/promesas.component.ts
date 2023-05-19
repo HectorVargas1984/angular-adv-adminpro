@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-promesas',
   templateUrl: './promesas.component.html',
-<<<<<<< HEAD
   styleUrls: ['./promesas.component.css']
 })
 export class PromesasComponent implements OnInit {
@@ -47,34 +46,5 @@ export class PromesasComponent implements OnInit {
   }
 
 }
-=======
-  styles: [
-  ]
-})
-export class PromesasComponent implements OnInit{
 
 
-  ngOnInit(): void {
-    this.getUsuarios().then(usuarios =>{
-      console.log(usuarios)
-    });
-  }
-
-getUsuarios(){
-
-  const promesa = new Promise((res, rej) =>{
-    fetch('https://reqres.in/api/users')
-    .then(resp => resp.json())
-    .then(body => res(body.data))
-
-  });
-
-  return promesa;
-  
-  
-}
-
-  
-}
-
->>>>>>> cdb6002aff6201e7bdb05ba6a9b82d97c7fa226f
